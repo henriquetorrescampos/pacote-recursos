@@ -8,14 +8,12 @@ const CONFIG = {
   precoDe: 'R$ 97,00',        // valor "de" (riscado)
   preco: 'R$ 37,00',          // valor final
   parcelas: 'ou até 8x de R$ 5,27 no cartão',
-  bonusDe: 'R$ 47,00',        // valor "de" do bônus
 };
 
 /* ---------- Aplica a configuração ---------- */
 document.querySelectorAll('[data-preco]').forEach(el => (el.textContent = CONFIG.preco));
 document.querySelectorAll('[data-preco-de]').forEach(el => (el.textContent = CONFIG.precoDe));
 document.querySelectorAll('[data-parcelas]').forEach(el => (el.textContent = CONFIG.parcelas));
-document.querySelectorAll('[data-bonus-de]').forEach(el => (el.textContent = CONFIG.bonusDe));
 document.querySelectorAll('[data-checkout]').forEach(el => (el.href = CONFIG.checkoutUrl));
 document.querySelectorAll('[data-year]').forEach(el => (el.textContent = new Date().getFullYear()));
 
@@ -41,7 +39,12 @@ const hero = document.querySelector('.hero');
 const offer = document.querySelector('#oferta');
 let pastHero = false;
 let atOffer = false;
-const updateSticky = () => sticky.classList.toggle('is-visible', pastHero && !atOffer);
+const updateSticky = () => {
+  const show = pastHero && !atOffer;
+  sticky.classList.toggle('is-visible', show);
+  // só empurra o WhatsApp para cima quando a barra está de fato visível (mobile)
+  document.body.classList.toggle('has-sticky', show && getComputedStyle(sticky).display !== 'none');
+};
 
 if ('IntersectionObserver' in window && sticky) {
   new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting; updateSticky(); }).observe(hero);
