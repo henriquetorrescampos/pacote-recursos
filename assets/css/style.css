@@ -276,7 +276,7 @@ a { color: inherit; }
 }
 
 /* ---------- Galeria ---------- */
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gallery { max-width: 460px; margin: 0 auto; }
 .gallery img {
   border-radius: var(--radius); box-shadow: var(--shadow);
   aspect-ratio: 3 / 4; object-fit: cover; width: 100%;
@@ -508,8 +508,9 @@ a { color: inherit; }
 .footer { background: var(--navy); color: rgba(255, 255, 255, .8); text-align: center; padding: 40px 0 110px; font-size: 14px; }
 .footer p + p { margin-top: 8px; }
 .footer a { color: var(--white); }
-.footer__brand { font-family: var(--font-title); font-size: 20px; color: var(--white); }
-.footer__copy { opacity: .7; }
+.footer__brand { font-family: var(--font-title); font-size: 18px; color: var(--white); }
+.footer__company { font-weight: 700; letter-spacing: .5px; font-size: 13px; }
+.footer__cnpj { font-size: 13px; opacity: .75; }
 
 /* ---------- CTA fixo ---------- */
 .sticky-cta {
@@ -581,8 +582,6 @@ body.has-sticky .whatsapp-float { bottom: 96px; }
   .tool__media { width: 300px; height: 250px; }
   .tool__name { font-size: 18px; }
   .tool p { font-size: 16px; }
-  .gallery { grid-template-columns: 1fr; }
-  .gallery img { aspect-ratio: 4 / 5; }
   .benefits, .steps { grid-template-columns: 1fr; }
   .guarantee { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 24px; }
   .section__title--left { text-align: center; }
