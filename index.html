@@ -152,8 +152,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 
@@ -328,11 +328,11 @@
   <!-- ============ BÔNUS ============ -->
   <section class="section" id="bonus">
     <div class="container">
-      <h2 class="combo__title">🧠 SUPER COMBO <strong>Lapidando Emoções</strong></h2>
-
       <div class="combo reveal">
+        <h2 class="combo__title">🧠 SUPER COMBO <strong>Lapidando Emoções</strong></h2>
+        <p class="combo__count">5 Recursos <span class="combo__plus" aria-hidden="true">+</span><span class="sr-only">mais</span> 1 Bônus</p>
+
         <div class="combo__media">
-          <p class="combo__count">5 Recursos <span class="combo__plus">+</span> 1 Bônus</p>
           <img width="1400" height="933" src="assets/img/super-combo.jpg" alt="Todos os recursos do Super Combo Lapidando Emoções e o bônus de atividades para colorir" loading="lazy" data-lightbox>
         </div>
 
@@ -355,7 +355,38 @@
           </div>
 
           <a href="#" class="btn btn--buy btn--pulse" data-checkout>🧠 QUERO MEU SUPER COMBO!</a>
+
+          <!-- Bandeiras de pagamento -->
+          <ul class="pay-flags" aria-label="Formas de pagamento aceitas">
+            <li class="flag flag--pix" title="Pix">
+              <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path fill="#32bcad" d="M8 0.6 15.4 8 8 15.4 0.6 8z"/><path fill="#fff" d="M8 4.2 11.8 8 8 11.8 4.2 8z"/></svg>pix
+            </li>
+            <li class="flag flag--visa" title="Visa">VISA</li>
+            <li class="flag flag--master" title="Mastercard"><span></span><span></span></li>
+            <li class="flag flag--elo" title="Elo">elo</li>
+            <li class="flag flag--amex" title="American Express">AMEX</li>
+            <li class="flag flag--hiper" title="Hipercard">Hiper</li>
+            <li class="flag flag--boleto" title="Boleto">
+              <svg viewBox="0 0 20 12" width="18" height="11" aria-hidden="true"><path fill="#222" d="M0 0h1.5v12H0zM3 0h1v12H3zM5.5 0h2v12h-2zM9 0h1v12H9zM11.5 0h1.5v12h-1.5zM14.5 0h1v12h-1zM17 0h3v12h-3z"/></svg>
+            </li>
+          </ul>
         </div>
+
+        <!-- Selos de confiança -->
+        <ul class="trust">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11V5l-8-3z" fill="#22c55e"/><rect x="8.5" y="10.5" width="7" height="6" rx="1" fill="#fff"/><path d="M10 10.5V9a2 2 0 0 1 4 0v1.5" stroke="#fff" stroke-width="1.6" fill="none"/></svg>
+            <span>Compra<br>segura</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="7" fill="#ffc83d"/><path d="m8 15-2 7 6-3 6 3-2-7" fill="#f59e0b"/><path d="m9 9 2 2 4-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Satisfação<br>garantida</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11V5l-8-3z" fill="#7b3fe4"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Privacidade<br>protegida</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -489,6 +520,6 @@
     <img src="" alt="">
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
