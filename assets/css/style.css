@@ -241,19 +241,20 @@ a { color: inherit; }
   text-align: center;
 }
 .tool__media {
-  width: 360px;
-  height: 300px;
+  width: 340px;
   max-width: 100%;
+  aspect-ratio: 1 / 1;            /* caixa quadrada */
   margin: 0 auto 20px;
   border-radius: 16px;
   overflow: hidden;
+  background: #fff;
 }
 .tool__media img {
   display: block;
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: cover;
+  object-fit: contain;            /* mostra a imagem inteira, sem cortar */
   cursor: zoom-in;
   transition: transform .3s ease;
 }
@@ -554,7 +555,7 @@ body.has-sticky .whatsapp-float { bottom: 96px; }
   .tools__title { font-size: 24px; }
   .tools__lead { font-size: 16px; margin-bottom: 36px; }
   .tools { gap: 40px; }
-  .tool__media { width: 300px; height: 250px; }
+  .tool__media { width: 100%; max-width: 340px; }
   .tool__name { font-size: 18px; }
   .tool p { font-size: 16px; }
   .benefits, .steps { grid-template-columns: 1fr; }
