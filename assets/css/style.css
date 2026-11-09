@@ -144,6 +144,7 @@ a { color: inherit; }
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(60, 40, 120, .18);
 }
+.hero__media picture, .combo__media picture { display: block; }
 .hero__media img { width: 100%; height: auto; }
 .hero .btn {
   width: 100%;
