@@ -6,8 +6,8 @@ const CONFIG = {
   checkoutUrl: 'https://pay.monetizze.com.br/KKF472927',
 
   precoDe: 'R$ 97,00',        // valor "de" (riscado)
-  preco: 'R$ 37,00',          // valor final
-  parcelas: 'ou até 8x de R$ 5,27 no cartão',
+  preco: 'R$ 27,90',          // valor final
+  parcelas: 'ou até 6x de R$ 5,15 no cartão',
 };
 
 /* ---------- Aplica a configuração ---------- */

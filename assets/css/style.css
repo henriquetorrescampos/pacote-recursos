@@ -402,7 +402,8 @@ a { color: inherit; }
   font-family: Arial, sans-serif; font-weight: 800; font-size: 12px; line-height: 1;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
 }
-.flag--pix { color: #32bcad; font-size: 13px; text-transform: lowercase; }
+.flag--pix { color: #00bdae; font-size: 13px; text-transform: lowercase; }
+.flag--pix img { width: 15px; height: 15px; display: block; }
 .flag--visa { color: #1a1f71; font-style: italic; font-size: 13px; letter-spacing: .5px; }
 .flag--master span { width: 15px; height: 15px; border-radius: 50%; background: #eb001b; }
 .flag--master span + span { background: #f79e1b; margin-left: -7px; mix-blend-mode: multiply; }
