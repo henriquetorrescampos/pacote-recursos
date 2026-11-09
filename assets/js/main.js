@@ -3,7 +3,7 @@
    ========================================================= */
 const CONFIG = {
   // Link do checkout (Kiwify, Hotmart, Eduzz, Cakto etc.)
-  checkoutUrl: '#',
+  checkoutUrl: 'https://pay.monetizze.com.br/KKF472927',
 
   precoDe: 'R$ 97,00',        // valor "de" (riscado)
   preco: 'R$ 37,00',          // valor final
