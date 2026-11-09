@@ -51,26 +51,6 @@ if ('IntersectionObserver' in window && sticky) {
   new IntersectionObserver(([e]) => { atOffer = e.isIntersecting; updateSticky(); }, { threshold: 0.1 }).observe(offer);
 }
 
-/* ---------- Lightbox ---------- */
-const lightbox = document.querySelector('.lightbox');
-const lightboxImg = lightbox.querySelector('img');
-
-document.querySelectorAll('[data-lightbox]').forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.currentSrc || img.src;
-    lightboxImg.alt = img.alt;
-    lightbox.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-  });
-});
-
-const closeLightbox = () => {
-  lightbox.classList.remove('is-open');
-  document.body.style.overflow = '';
-};
-lightbox.addEventListener('click', e => { if (e.target !== lightboxImg) closeLightbox(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
 /* ---------- FAQ: mantém só uma pergunta aberta ---------- */
 document.querySelectorAll('.faq details').forEach(d => {
   d.addEventListener('toggle', () => {
