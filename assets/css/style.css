@@ -363,13 +363,13 @@ a { color: inherit; }
   font-family: 'Poppins', var(--font-body);
   font-weight: 700;
   font-size: 26px;
-  color: #de7fab;
+  color: #3b7fc4;               /* azul */
   margin-bottom: 14px;
 }
 .combo__plus {
   display: inline-grid; place-items: center;
   width: 30px; height: 30px; border-radius: 8px;
-  background: #c4a7e7; color: var(--white);
+  background: #8ab6e0; color: var(--white);
   font-size: 26px; line-height: 1; vertical-align: -4px; margin: 0 6px;
 }
 .combo__media { position: relative; z-index: 1; padding: 0 4px; }
@@ -380,8 +380,10 @@ a { color: inherit; }
   cursor: zoom-in;
 }
 .combo__panel {
-  background: #c17e9f;
+  background: #95bfe6;          /* azul claro, igual à página de obrigado */
+  background: radial-gradient(ellipse at 50% 35%, #a9cdef 0%, #8ab6e0 100%);
   color: var(--white);
+  text-shadow: 0 1px 2px rgba(30, 70, 120, .35);  /* leitura do branco no azul claro */
   border-radius: 18px;
   margin-top: -60px;            /* painel começa por trás da imagem */
   padding: 84px 22px 26px;
@@ -395,9 +397,10 @@ a { color: inherit; }
 .combo__value {
   font-family: 'Poppins', var(--font-body); font-weight: 700;
   font-size: 54px; line-height: 1.1;
-  color: #ffd93d; text-shadow: 0 3px 0 rgba(0, 0, 0, .12);
+  color: #ffe14d; text-shadow: 0 3px 0 rgba(30, 70, 120, .35);
 }
 .combo__installments { font-family: 'Poppins', var(--font-body); font-size: 16px; }
+.combo__panel .btn--buy, .combo__panel .pay-flags { text-shadow: none; }
 .combo__panel .btn--buy { font-size: clamp(15px, 4.3vw, 21px); padding: 18px 10px; white-space: nowrap; }
 
 /* Bandeiras de pagamento */
